@@ -1,0 +1,35 @@
+/* RESET DELLA PAGINA: il selettore universale(*) applica a tutti gli
+elementi della pagina, il margin 0 e il padding toglie tutti i valori
+di default e la regola box sizing Dice al browser: "Quando imposti width o height,
+includi anche padding e bordi nel calcolo."*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Imposto lo sfondo dell'intestazione ed il padding a tutto l'header */
+header {
+    background-color: #fff;
+    padding: 10px 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Rendo immagine e titolo affiancati */
+/*Applica display: inline-block e vertical-align: middle a *tutti gli <img> e a tutti gli <h1> che si trovano dentro un qualsiasi <header> della pagina HTML.*/
+header img,
+header h1 {
+    display: inline-block;
+    vertical-align: middle;
+    /* allineamento verticale */
+}
+
+h1 {
+    /* margin: 0 0 0 10px;  spazio a sinistra rispetto all'immagine: margin: TOP  RIGHT  BOTTOM  LEFT */
+    margin-left: 10px;
+    /* spazio a sinistra rispetto all'immagine scritto meglio*/
+    color: #333;
+    font-size: 40px;
+}
