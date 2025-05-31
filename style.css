@@ -10,26 +10,31 @@ includi anche padding e bordi nel calcolo."*/
 }
 
 
-/* Imposto lo sfondo dell'intestazione ed il padding a tutto l'header */
 header {
     background-color: #fff;
-    padding: 10px 20px;
+    padding: 10px 10px;
+    /* padding: 10px 10px; 10px sopra e sotto, 10px a destra e sinistra */
     font-family: 'Roboto', sans-serif;
 }
 
-/* Rendo immagine e titolo affiancati */
-/*Applica display: inline-block e vertical-align: middle a *tutti gli <img> e a tutti gli <h1> che si trovano dentro un qualsiasi <header> della pagina HTML.*/
-header img,
-header h1 {
-    display: inline-block;
+header img {
     vertical-align: middle;
-    /* allineamento verticale */
+    /* allinea l'immagine verticalmente al centro: 
+    questa proprietà funziona solo su elementi inline o inline-block
+    in pratica, non eredita il comportamento su tutto il contenuto del blocco
+    come invece fanno font-family o color*/
 }
 
-h1 {
-    /* margin: 0 0 0 10px;  spazio a sinistra rispetto all'immagine: margin: TOP  RIGHT  BOTTOM  LEFT */
+header h1 {
+    display: inline-block;
+    /* rende l'elemento h1 un elemento inline-block */
+    /* in modo che possa essere allineato con l'immagine */
+    vertical-align: middle;
+    /* allinea il testo verticalmente al centro rispetto all'immagine */
     margin-left: 10px;
     /* spazio a sinistra rispetto all'immagine scritto meglio*/
+    /*altro modo per scrivere il margin-left:  
+    margin: 0 0 0 10px;  spazio a sinistra rispetto all'immagine: margin: TOP  RIGHT  BOTTOM  LEFT */
     color: #333;
     font-size: 40px;
 }
