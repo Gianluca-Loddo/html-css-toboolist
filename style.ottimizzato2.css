@@ -138,14 +138,15 @@ prima del contenuto reale di un elemento HTML, senza dover modificare l’HTML s
 
 
 
-    .completed::before {
+.completed::before {
     content: '\2713';
     /*quando si usa content in CSS (es. con ::before o ::after), il carattere va scritto con \ seguito dal codice esadecimale a 4 cifre o più, senza U+*/
-    border: 1.5px solid rgb(53, 177, 68);
-    /* bordo verde scuro - il cerchio*/
-    color: rgb(53, 177, 68);
-    /* colore verde scuro del segno di spunta */
+    border: 2px solid #98d8cb;
+    /* bordo verde chiaro - il cerchio */
+    color: #98d8cb;
     /* il colore del testo del segno di spunta */
+    font-weight: bold;
+    /* rende il segno di spunta più spesso */
     display: inline-block;
     /* rende l'elemento un blocco inline, permettendo di specificare larghezza e altezza, 
     nb gli elementi inline non possono avere larghezza e altezza specificate */
@@ -164,12 +165,13 @@ prima del contenuto reale di un elemento HTML, senza dover modificare l’HTML s
     /* margine: 8px sopra, 8px a destra, 8px sotto, 0 a sinistra */
     vertical-align: middle;
     /* allinea verticalmente l'elemento al centro rispetto agli altri elementi inline */
-    }
+}
 
-    .not_completed::before {
+.not_completed::before {
     content: '\2717';
-    border: 1.5px solid #ff1010;
+    border: 2px solid #ff1010;
     color: #ff1010;
+    font-weight: bold;
     display: inline-block;
     width: 16px;
     height: 16px;
