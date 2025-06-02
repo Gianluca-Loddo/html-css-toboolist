@@ -5,16 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Toboolist</title>
-
     <!-- Importo da Google font lo stile Roboto -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-
-
     <!-- Foglio di stile css -->
     <link rel="stylesheet" href="style.ottimizzato2.css">
-
 </head>
 
 <body>
@@ -23,10 +19,7 @@
         <img src="./img/logo.png" alt="Toboolist Logo">
         <h1>Toboolist</h1>
     </header>
-
     <main>
-
-
         <div class="box-container topper_button_container">
             <!-- Ho creato un div che contiene i bottoni per aggiungere task e sezioni -->
             <button class="topper_button">Add Task</button>
@@ -34,10 +27,8 @@
             <!-- Ho assegnato al secondo bottone due classi: "topper_button" e "invisible" affinchè il bottone
              possa ereditare alcune proprietà dal primo bottone, ma con differenze di stile specificate in invisible. -->
         </div>
-
         <div class="box-container todo_list_container">
             <!-- Ho creato un div che contiene le liste di task -->
-
             <h2>&#9662; New Task</h2>
             <ul class="todo_list">
                 <li class="completed">Quarterly Newsletter <button class="category editorial">Editorial</button></li>
@@ -51,7 +42,8 @@
                 <li class="not_completed">Update website <button class="category website">Website</button></li>
                 <li class="completed">Mobile app launch <button class="category q1-goals">Q1 Goals</button></li>
                 <li class="not_completed">Interview John H. <button class="category recruiting">Recruiting</button></li>
-                <li class="completed">Summit update to mobile storefronts <button class="category mobile">Mobile</button></li>
+                <li class="completed">Summit update to mobile storefronts <button
+                        class="category mobile">Mobile</button></li>
             </ul>
             <br>
             <h2>&#9662; Upcoming</h2>
@@ -62,12 +54,15 @@
                 <li class="completed">Review editorial calendar <button class="category editorial">Editorial</button>
                 </li>
             </ul>
-
         </div>
-
-
     </main>
-
+    <footer>
+        <br>
+        <a href="https://github.com/Gianluca-Loddo/html-css-toboolist" target="_blank"
+            style="text-decoration: none; color: black;">
+            <img src="./img/github.PNG" alt="logo github"><span>Gianluca Loddo</span>
+        </a>
+    </footer>
 </body>
 
 </html>
