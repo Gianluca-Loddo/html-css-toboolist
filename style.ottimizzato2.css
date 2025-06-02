@@ -182,3 +182,55 @@ prima del contenuto reale di un elemento HTML, senza dover modificare l’HTML s
     margin: 8px 8px 8px 0;
     vertical-align: middle;
 }
+
+
+.category {
+    text-align: center;
+    /* allinea il testo al centro */
+    border-radius: 30px;
+    /* arrotonda gli angoli del bottone */
+    width: 60px;
+    /* larghezza del bottone */
+    height: 20px;
+    /* altezza del bottone */
+    font-size: 9px;
+    /* dimensione del testo del bottone */
+    margin-left: 5px;
+    /* margine a sinistra del bottone */
+    vertical-align: middle;
+    /* allinea verticalmente il bottone al centro rispetto agli altri elementi inline */
+    color: white;
+    /* colore del testo del bottone */
+    border: none;
+    /* rimuove il bordo predefinito del bottone */
+}
+
+/* In HTML, un elemento <button> è nativamente un elemento inline-block.
+Quindi, non è necessario specificare display: inline-block; per i bottoni. 
+Funziona anche senza all: unset (togliere tutte le impostazioni di base del bottone)
+in quanto tutti gli stili visibili (colore, bordo, dimensioni, testo…) sono già stati sovrascritti*/
+
+
+.editorial {
+    background-color: rgb(85, 159, 244);
+}
+
+.q1-goals {
+    background-color: rgb(159, 107, 223);
+}
+
+.recruiting {
+    background-color: rgb(70, 194, 142);
+}
+
+.mobile {
+    background-color: rgb(233, 137, 35);
+}
+
+.website {
+    background-color: rgb(195, 78, 152);
+}
+
+.sales {
+    background-color: rgb(149, 188, 91);
+}
