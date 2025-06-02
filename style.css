@@ -52,9 +52,21 @@ body {
 }
 
 .topper_button_container {
+    font-family: 'Roboto', sans-serif;
+    /* specifica il tipo di carattere da utilizzare per il testo nel contenitore del bottone */
     background-color: white;
-    margin: 50px 170px 2px;
-    /* margine superiore di 65px, destro e sinistro di 205px, inferiore di 2px */
+    width: 100%;
+    /* larghezza del contenitore della lista: 100% del suo elemento padre */
+    max-width: 800px;
+    /* larghezza massima del contenitore della lista: 800px */
+    /* se il contenitore è più largo di 800px, si adatterà a 800px */
+    margin: 50px auto 2px;
+    /* margine superiore di 50px, destro e sinistro automatici per centrare, 
+    inferiore di 2px */
+
+    /*perchè il margin auto possa funzionare,
+    il contenitore deve avere una larghezza definita (width o max-width)*/
+
     padding: 20px 40px 10px;
     /* padding: 20px 40px 10px; 20px sopra, 40px a destra e sinistra, 10px sotto*/
     border-radius: 5px 5px 0 0;
@@ -90,4 +102,33 @@ body {
     /* il bordo del bottone è di 1px, solido e dello stesso colore del bottone 
     color è un valore EREDITARIO (differentemente da background-color) e dunque si può
     utilizzare "currentColor" per mantenere la coerenza con il colore del testo */
+}
+
+.todo_list_container {
+    font-family: 'Roboto', sans-serif;
+    /* specifica il tipo di carattere da utilizzare per il testo nella lista */
+    color: #333;
+    /* colore del testo della lista: grigio scuro */
+    
+    
+    background-color: white;
+    width: 100%;
+    /* larghezza del contenitore della lista: 100% del suo elemento padre */
+    max-width: 800px;
+    /* larghezza massima del contenitore della lista: 800px */
+    /* se il contenitore è più largo di 800px, si adatterà a 800px */
+    margin: 0 auto 2px;
+    /* margine superiore di 0px, destro e sinistro automatici per centrare, 
+    inferiore di 2px */
+       
+    
+    padding: 20px 40px 20px;
+    /* padding: 20px 40px 20px; 20px sopra, 40px a destra e sinistra, 20px sotto*/
+    border-radius: 0 0 5px 5px;
+    /* arrotonda gli angoli inferiori del contenitore della lista: DESTRA E SINISTRA */
+}
+
+.todo_list {
+    list-style: none;
+    /* rimuove i punti elenco predefiniti della lista */
 }
