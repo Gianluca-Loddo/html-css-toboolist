@@ -20,7 +20,7 @@ body {
 /* HEADER */
 header {
     background-color: #fff;
-    /* se non specifico il colore dell'header, eredita quello del body */
+    /* se non specifico il colore dell'header, eredita quello del body in quanto il colore di default è trasparente */
     padding: 10px 10px;
     /* padding: 10px sopra e sotto, 10px a destra e sinistra */
 }
@@ -48,15 +48,14 @@ header h1 {
     background-color: white;
     /* colore di sfondo bianco */
     width: 100%;
-    /* larghezza del contenitore: 100% del suo elemento padre */
+    /* larghezza del contenitore: 100% del suo elemento padre (body) */
     max-width: 800px;
     /* larghezza massima del contenitore: 800px */
     margin: 0 auto;
-    /* centrato orizzontalmente: margine automatico a sinistra e destra */
+    /* centrato orizzontalmente: margine 0 sopra e sotto e automatico a sinistra e destra.
+    affinchè la funzione auto funzioni deve essere specificato un valore di larghezza (width o max-width) */
     padding: 20px 40px;
     /* 20px sopra e sotto, 40px a destra e sinistra */
-    font-family: 'Roboto', sans-serif;
-    /* mantiene lo stesso font del resto della pagina */
 }
 
 /* CONTENITORE BOTTONE IN ALTO */
