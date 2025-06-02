@@ -80,10 +80,16 @@ header h1 {
     /* spazio interno tra il contenuto (es: "Add Task") e il bordo del bottone */
     border: solid 1px #47adf1;
     /* bordo di 1px, solido, stesso colore del bottone */
+    /* rimuove il bordo predefinito che  i browser aggiungono ai bottoni.
+    Di solito quel bordo è grigio e ha uno stile "old-style".
+    Invece di inserire le specifiche si può usare "none" per il bordo, 
+    così il bottone è più moderno e si adatta meglio al design personalizzato*/
     border-radius: 5px;
     /* arrotonda gli angoli del bottone */
     font-size: 16px;
     /* dimensione del testo nel bottone */
+    cursor: pointer;
+    /* cambia il cursore in una mano quando si passa sopra il bottone */
 }
 
 .topper_button.invisible {
