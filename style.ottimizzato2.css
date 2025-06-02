@@ -1,0 +1,112 @@
+/* RESET DELLA PAGINA: il selettore universale(*) applica a tutti gli
+elementi della pagina. Il margin e il padding a 0 rimuovono i valori
+di default. La regola box-sizing dice al browser: "Quando imposti width o height,
+includi anche padding e bordi nel calcolo." */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f6f8f9;
+    /* colore di sfondo della pagina: grigino molto chiaro, quasi bianco */
+    font-family: 'Roboto', sans-serif;
+    /* specifica il tipo di carattere da utilizzare per tutta la pagina */
+    color: #333;
+    /* colore del testo generale */
+}
+
+/* HEADER */
+header {
+    background-color: #fff;
+    /* se non specifico il colore dell'header, eredita quello del body */
+    padding: 10px 10px;
+    /* padding: 10px sopra e sotto, 10px a destra e sinistra */
+}
+
+header img {
+    vertical-align: middle;
+    /* allinea l'immagine verticalmente al centro.
+    questa proprietà funziona solo su elementi inline o inline-block */
+}
+
+header h1 {
+    display: inline-block;
+    /* rende l'elemento h1 un elemento inline-block
+    in modo che possa essere allineato con l'immagine */
+    vertical-align: middle;
+    /* allinea il testo verticalmente al centro rispetto all'immagine */
+    margin-left: 10px;
+    /* spazio a sinistra rispetto all'immagine */
+    font-size: 40px;
+    /* dimensione del titolo */
+}
+
+/* CLASSE RIUTILIZZABILE PER I CONTENITORI CENTRATI */
+.box-container {
+    background-color: white;
+    /* colore di sfondo bianco */
+    width: 100%;
+    /* larghezza del contenitore: 100% del suo elemento padre */
+    max-width: 800px;
+    /* larghezza massima del contenitore: 800px */
+    margin: 0 auto;
+    /* centrato orizzontalmente: margine automatico a sinistra e destra */
+    padding: 20px 40px;
+    /* 20px sopra e sotto, 40px a destra e sinistra */
+    font-family: 'Roboto', sans-serif;
+    /* mantiene lo stesso font del resto della pagina */
+}
+
+/* CONTENITORE BOTTONE IN ALTO */
+.topper_button_container {
+    margin-top: 50px;
+    /* margine superiore di 50px */
+    margin-bottom: 2px;
+    /* margine inferiore di 2px */
+    border-radius: 5px 5px 0 0;
+    /* arrotonda solo gli angoli superiori: sinistra e destra */
+    padding-bottom: 10px;
+    /* aggiunge spazio solo sotto il contenuto */
+}
+
+/* STILE DEL BOTTONE */
+.topper_button {
+    background-color: #47adf1;
+    /* colore di sfondo azzurro acceso */
+    color: white;
+    /* colore del testo bianco */
+    padding: 10px 20px;
+    /* spazio interno tra il contenuto (es: "Add Task") e il bordo del bottone */
+    border: solid 1px #47adf1;
+    /* bordo di 1px, solido, stesso colore del bottone */
+    border-radius: 5px;
+    /* arrotonda gli angoli del bottone */
+    font-size: 16px;
+    /* dimensione del testo nel bottone */
+}
+
+.topper_button.invisible {
+    /* Applica lo stile solo agli elementi che hanno sia topper_button che invisible come classi */
+    background-color: transparent;
+    /* rende il bottone trasparente, ma mantiene lo spazio occupato */
+    color: #c5cbcf;
+    /* colore del testo grigio chiaro, visibile ma non evidente */
+    border: solid 1px currentColor;
+    /* bordo dello stesso colore del testo grazie a currentColor */
+}
+
+/* CONTENITORE DELLA LISTA */
+.todo_list_container {
+    margin-bottom: 2px;
+    /* margine inferiore di 2px per distanziarlo dal contenuto successivo */
+    border-radius: 0 0 5px 5px;
+    /* arrotonda solo gli angoli inferiori: sinistra e destra */
+}
+
+/* LISTA TASK */
+.todo_list {
+    list-style: none;
+    /* rimuove i punti elenco predefiniti della lista <ul> */
+}
